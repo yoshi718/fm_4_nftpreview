@@ -35,7 +35,7 @@ main {
 
 @media screen and (min-width: 376px) {
     main {
-        max-width: 400px;
+        max-width: 375px;
     }
 }
 
@@ -95,12 +95,13 @@ p {
 
 .space-lines {
     line-height: 1.5em;
+    margin-top: 20px;
 }
 
 .details {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 10px;
+    padding: 10px 0 15px 0;
     border-bottom: 1px solid hsla(215, 51%, 70%, 25%);
 }
 
