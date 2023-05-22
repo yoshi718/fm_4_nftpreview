@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+/* || VARIABLES */
+
+:root {
+    --BORDER-RADIUS: 20px;
+}
+
+/* || GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+}
+
+body{
+    background-color: hsl(216, 54%, 11%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    max-width: 355px;
+    color: white;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: var(--BORDER-RADIUS);
+}
+
+@media screen and (min-width: 376px) {
+    main {
+        max-width: 400px;
+    }
+}
+
+section {
+    margin: 15px 20px;
+}
+
+figure {
+    position: relative;
+    border-radius: var(--BORDER-RADIUS);
+    background-color: hsl(178, 100%, 50%);
+    margin-top: 30px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+figure:hover .main-img {
+    opacity: .5;
+}
+figure:hover .icon-view {
+    opacity: 1;
+}
+
+.main-img {
+    display: block;
+    border-radius: var(--BORDER-RADIUS);
+    width: 100%;
+    height: auto;
+}
+
+.icon-view {
+    opacity: 0;
+    position: absolute;
+    top: 43%;
+    left: 43%;
+}
+
+h1 {
+    font-size: 1.4em;
+    margin: 20px 0 10px 0;
+}
+
+p {
+    font-size: 1em;
+}
+
+.txt-small {
+    color: hsl(215, 51%, 70%);
+}
+
+.space-lines {
+    line-height: 1.5em;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid hsla(215, 51%, 70%, 25%);
+}
+
+.eth {
+    color: hsl(178, 100%, 50%);
+}
+
+.creation {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.avatar {
+    outline: 2px solid white;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    color: white;
+}
+
+footer a {
+    color: hsl(228, 45%, 44%);
+}
+
+footer a:hover{
+    cursor: pointer;
+    color: hsl(228, 47%, 73%);
+}
